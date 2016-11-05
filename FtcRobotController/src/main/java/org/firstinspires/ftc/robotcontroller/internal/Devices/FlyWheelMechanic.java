@@ -13,15 +13,14 @@ public class FlyWheelMechanic {
     private DcMotor[]  flymotor;
 
     DcMotor[] flywheel = new DcMotor[1];
-    public FlyWheelMechanic (HardwareMap hardwareMap){
 
+    public FlyWheelMechanic (HardwareMap hardwareMap)
+    {
         flywheel[0] = hardwareMap.dcMotor.get("forwardflywheel");
-
-
     }
 
     // Sets power of the two left motors
-    public synchronized void setwheel(double power)
+    public synchronized void setWheel(double power)
     {
         double convertedPower = ((double)power)/100.0;
         // for each motor in leftMotors
@@ -36,9 +35,8 @@ public class FlyWheelMechanic {
     {
     }
 
-  public synchronized void setPower(double wheelpower)
+    public synchronized void setPower(double wheelPower)
     {
-        setwheel(wheelpower);
-
+        setWheel(wheelPower);
     }
 }
