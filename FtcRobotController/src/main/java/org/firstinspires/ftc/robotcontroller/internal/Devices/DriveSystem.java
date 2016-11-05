@@ -39,7 +39,7 @@ public class DriveSystem
             motor.setPower(convertedPower);
         }
     }
-    
+
     public synchronized void setPower(double leftPower, double rightPower)
     {
         setLeft(leftPower);

@@ -71,7 +71,7 @@ public class TeleOp extends OpMode
 
 
         /// flywheel
-        boolean flyWheelPressed = gamepad2.right_bumper;
+        // boolean flyWheelPressed = gamepad2.right_bumper;
     }
 
 }
